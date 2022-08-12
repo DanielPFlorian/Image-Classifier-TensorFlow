@@ -1,8 +1,25 @@
-# Classifying Flowers with A Deep Neural Network using TensorFlow
+# Image-Classifier
 
-## Objective
+Image-Classifier utilizes deep learning with TensorFlow to predict flower species
+from an image. The neural network is trained on thousands of images of 102 species
+of commonly occurring flowers in the United Kingdom. When an image of a flower is
+given as input to the trained model, the highest probabilities of the species that
+flower corresponds to are predicted.
 
-Build and train an image classifier to recognize different species of flowers
+### TensorFlow Model Overview
+
+The dataset the model is trained on comes from the
+[oxford_flowers102 dataset](https://www.tensorflow.org/datasets/catalog/oxford_flowers102).
+To efficiently train, validate and test the TensorFlow model, a pipeline is
+created to format, cache, shuffle, prefetch and batch the images to be fed to the
+model. To increase the accuracy of predictions, the pretrained
+[MobileNet V2](https://tfhub.dev/google/tf2-preview/mobilenet_v2/feature_vector/4)
+neural network is utilized as an image feature extractor after which dense layers
+of relu activation units and a final softmax layer are used. Dropout and early
+stopping techniques are applied to prevent overfitting.
+The [Project_Image_Classifier_Project.ipynb](https://github.com/DanielPFlorian/Image-Classifier/blob/main/Project_Image_Classifier_Project.ipynb)
+jupyter notebook file contains the code and steps used for model creation and
+evaluation.
 
 ### Techniques Used
 
