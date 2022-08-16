@@ -1,6 +1,5 @@
-matplotlib==3.5.1
-numpy==1.21.5
-Pillow==9.2.0
-tensorflow==2.8.0
-tensorflow_hub==0.12.0
-protobuf==3.20.*
+matplotlib==3.5.*
+numpy==1.21.*
+Pillow==9.2.*
+tensorflow==2.8.*
+tensorflow_hub==0.12.*
