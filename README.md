@@ -61,8 +61,7 @@ pip install tensorflow_hub==0.12.*
 ```
 pip install -r requirements.txt
 ```
-3. Run commands from command_line_app folder with Python
-Commands:
+3. Run commands from command_line_app folder with python:
 ```
 usage: predict.py [-h] [--top_k TOP_K] [--category_names CATEGORY_NAMES] image_path model_path
 

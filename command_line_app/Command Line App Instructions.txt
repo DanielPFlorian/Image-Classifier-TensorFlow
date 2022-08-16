@@ -1,0 +1,57 @@
+Command Line App Instructions
+
+1. Clone repo: https://github.com/DanielPFlorian/Image-Classifier.git
+
+2. From command_line_app folder install requirements.txt with
+```
+	"pip install -r requirements.txt"
+```
+3. Run commands from command_line_app folder with python:
+
+```
+usage: predict.py [-h] [--top_k TOP_K] [--category_names CATEGORY_NAMES] image_path model_path
+
+positional arguments:
+  image_path                        File path of image
+  model_path                        Name of trained tensorflow .h5 model
+
+optional arguments:
+  -h, --help                        show this help message and exit
+  --top_k TOP_K                     (int) Return the top K most likely classes
+  --category_names CATEGORY_NAMES   .json file that maps labels to flower names
+```
+
+Example 1:
+```
+	"python predict.py --top_k 3 --category_names label_map.json ./test_images/cautleya_spicata.jpg ./trained_model.h5"
+```
+Returns image of flower and top k (int) probabilities. Close figure to continue:
+
+
+Example 2:
+```
+	"python predict.py  --category_names label_map.json ./test_images/tiger_lily.jpg ./trained_model.h5"
+```
+Returns command line output of probabilities for all 102 flower species:
+
+```
+Category Name: tiger lily
+Label: 6
+Probability: 0.999970555305481
+
+Category Name: cape flower
+Label: 37
+Probability: 2.0300290998420678e-05
+
+Category Name: fire lily
+Label: 21
+Probability: 8.172311027010437e-06
+
+Category Name: gaura
+Label: 57
+Probability: 7.215427331175306e-07
+
+Category Name: blackberry lily
+Label: 102
+Probability: 2.3401975113301887e-07
+```
