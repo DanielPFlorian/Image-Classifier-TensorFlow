@@ -45,11 +45,11 @@ def get_input_args():
     parser.add_argument("image_path",
                         help="File path of image")
     parser.add_argument("model_path",
-                        help="Name of trained tensorflow model")
+                        help="Name of trained tensorflow .h5 model")
     parser.add_argument("--top_k", dest="top_k", type=int,
-                        help="Return the top K most likely classes")
+                        help="(int) Return the top K most likely classes")
     parser.add_argument("--category_names", dest="category_names",
-                        help="Maps labels to flower names")
+                        help=".json file that maps labels to flower names")
     return parser.parse_args()
 
 def load_model(model_path):
