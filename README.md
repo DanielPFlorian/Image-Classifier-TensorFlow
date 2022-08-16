@@ -34,25 +34,24 @@ evaluation.
 - ArgParse command-line app creation
 
 ### Packages and Tools Required:
-```
-Python
-TensorFlow
-TensorFlow Datasets
-TensorFlow Hub
-Numpy
-Matplotlib
-Jupyter Notebook
-Pillow
 
-```
-### Package Installation
+#### For Jupyter Notebook
 ```
 Python 3.7-3.10
-pip install tensorflow==2.8.0
-pip install tensorflow_datasets==4.5.2
-pip install tensorflow_hub==0.12.0
-pip install numpy==1.22.3
-pip install Pillow==9.1.1
-pip install jupyter notebook==6.4.11
-
+pip install jupyter notebook==6.4.*
+pip install matplotlib==3.5.*
+pip install numpy==1.21.*
+pip install Pillow==9.2.*
+pip install tensorflow==2.8.*
+pip install tensorflow_datasets==4.5.*
+pip install tensorflow_hub==0.12.*
+```
+#### For Command Line App
+```
+Python 3.7-3.10
+pip install matplotlib==3.5.*
+pip install numpy==1.21.*
+pip install Pillow==9.2.*
+pip install tensorflow==2.8.*
+pip install tensorflow_hub==0.12.*
 ```
