@@ -33,7 +33,7 @@ evaluation.
 - Image Recognition Inference using Neural Network trained Model
 - ArgParse command-line app creation
 
-### Packages and Tools Required:
+### Packages and Tools Required
 
 #### For Jupyter Notebook
 ```
@@ -108,3 +108,19 @@ Category Name: blackberry lily
 Label: 102
 Probability: 2.3401975113301887e-07
 ```
+
+### License
+
+This project was submitted by Daniel P Florian as part of the Nanodegree At Udacity.
+
+As part of the Udacity Honor code, your submissions must be your own work, hence
+submitting this project as yours will cause you to break the Udacity Honor Code
+and the suspension of your account.
+
+Me, the author of the project, allow you to check the code as a reference, but if
+you submit it, it's your own responsibility if you get expelled.
+
+Copyright (c) 2022 Daniel P Florian
+
+Besides the above notice, the content of this repository is licensed under a
+[MIT License](https://opensource.org/licenses/MIT)
