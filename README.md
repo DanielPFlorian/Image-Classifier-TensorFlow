@@ -1,10 +1,10 @@
 # Image-Classifier
 
-Image-Classifier utilizes deep learning with TensorFlow to predict flower species
-from an image. The neural network is trained on thousands of images of 102 species
-of commonly occurring flowers in the United Kingdom. When an image of a flower is
-given as input to the trained model, the highest probabilities of the species that
-flower corresponds to are predicted.
+Image-Classifier utilizes deep learning with [TensorFlow](https://www.tensorflow.org/)
+to predict flower species from an image. The neural network is trained on thousands
+of images of 102 species of commonly occurring flowers in the United Kingdom. When
+an image of a flower is given as input to the trained model, the highest
+probabilities of the species that flower corresponds to are predicted.
 
 ### TensorFlow Model Overview
 
@@ -56,7 +56,7 @@ pip install tensorflow==2.8.*
 pip install tensorflow_hub==0.12.*
 ```
 ### Command Line App Instructions
-1. Clone [repo](https://github.com/DanielPFlorian/Image-Classifier.git)
+1. Clone [Image-Classifier repo](https://github.com/DanielPFlorian/Image-Classifier.git)
 2. From command_line_app folder install requirements.txt with
 ```
 pip install -r requirements.txt
@@ -74,18 +74,19 @@ optional arguments:
   --top_k TOP_K                     (int) Return the top K most likely classes
   --category_names CATEGORY_NAMES   .json file that maps labels to flower names
 ```
-Example 1:
+**Example 1:**
   ```
   python predict.py --top_k 3 --category_names label_map.json ./test_images/cautleya_spicata.jpg ./trained_model.h5
   ```
-Returns image of flower and top k (int) probabilities. Close figure to continue:
+**Returns** image of flower and top k (int) probabilities. Close figure to continue:
+
 ![command_line_app_figure](https://github.com/DanielPFlorian/Image-Classifier/blob/main/assets/command_line_app_figure.jpeg)
 
-Example 2:
+**Example 2:**
 ```
 python predict.py  --category_names label_map.json ./test_images/tiger_lily.jpg ./trained_model.h5
 ```
-Returns command line output of probabilities for all 102 flower species:
+**Returns** command line output of probabilities for all 102 flower species:
 ```
 Category Name: tiger lily
 Label: 6
