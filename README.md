@@ -1,4 +1,4 @@
-# Image-Classifier
+# Image-Classifier-TensorFlow
 
 Image-Classifier utilizes deep learning with [TensorFlow](https://www.tensorflow.org/)
 to predict flower species from an image. The neural network is trained on thousands
